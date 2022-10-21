@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/spacelab/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    
+    <title>City Weather</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Philippines City Weather</a>
+        </div>
+    </nav>
+
+    <br><br>
+    
+    <div class="card border-primary mb-3" style="max-width: 20rem;margin: auto;">
+        <div class="card-header">City Weather Checker</div>
+        <div class="card-body">
+          <div class="form-group">
+            <div class="weather-result"></div>
+            <br>
+            <fieldset>
+                <input class="form-control" id="city" type="text" placeholder="Enter City Name">
+                <br>
+                <input class="form-control" id="country" type="text" placeholder="Philippines" readonly>
+            </fieldset>
+            <br>
+            <button type="button" class="btn btn-primary">Check Weather</button>
+          </div>
+        </div>
+      </div>
+          
+    <script src="OpenWeather.js"></script>
+    <script src="UI.js"></script>
+    <script src="App.js"></script>
+</body>
+</html>
